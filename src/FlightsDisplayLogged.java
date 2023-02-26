@@ -2,13 +2,9 @@ import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
-import java.io.File;
-import java.nio.file.Files;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.io.IOException;
 
 public class FlightsDisplayLogged extends JPanel {
     private JTable flightsTable;

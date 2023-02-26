@@ -7,23 +7,13 @@ import java.sql.SQLException;
 
 public class SelectedFlightReservation extends JFrame {
 
-    private JLabel titleLabel;
-    private JLabel nameLabel;
-    private JLabel flightDateLabel;
-    private JLabel fromLocationLabel;
-    private JLabel toLocationLabel;
+    private JLabel titleLabel, nameLabel, flightDateLabel, fromLocationLabel, toLocationLabel;
 
-    private JButton reserveButton;
-    private JButton cancelButton;
+    private JButton reserveButton, cancelButton;
 
     private Connection c;
     private Integer userID;
-    private String userSes;
-    private String flightNumber;
-    private String name;
-    private String flightDate;
-    private String fromLocation;
-    private String toLocation;
+    private String userSes, flightNumber, name, flightDate, fromLocation, toLocation;
 
     public SelectedFlightReservation(Connection c, Integer userID, String flightNumber, String name, String flightDate, String fromLocation, String toLocation) {
         setTitle("Rezerwacja lotu");

@@ -15,7 +15,6 @@ public class FlightSearch extends JPanel {
     private DefaultTableModel tableModel;
 
     public FlightSearch(Connection c) {
-        //super("Flight Search");
 
         searchPanel = new JPanel(new GridLayout(5, 2));
         nameLabel = new JLabel("Nazwa linii:");
@@ -102,9 +101,5 @@ public class FlightSearch extends JPanel {
         add(searchPanel, BorderLayout.NORTH);
         add(tableScrollPane, BorderLayout.CENTER);
 
-        /*setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setSize(600, 400);
-        setLocationRelativeTo(null);
-        setVisible(true);*/
     }
 }

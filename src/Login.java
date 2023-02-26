@@ -2,17 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 import java.sql.*;
 
 public class Login extends JPanel{
     private JLabel titleLabel, usernameLabel, passwordLabel, notRegisteredLabel, signUpLabel;
     private JTextField usernameField;
     private JPasswordField passwordField;
-    private JButton registerButton, loginButton;
+    private JButton loginButton;
 
     public Login(Connection c, MainFrame frame) {
         Boolean a = true;
@@ -70,7 +66,6 @@ public class Login extends JPanel{
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
 
-            // Query users table for matching username and password
             try {
                 String selectQuery = "SELECT * FROM users WHERE username = ? AND password = ?";
                 PreparedStatement pstmt = c.prepareStatement(selectQuery);

@@ -18,7 +18,7 @@ public class Registration extends JFrame {
                 dim.width/2 -getSize().width/2,
                 dim.height/2-getSize().height/2
         );
-        //setUndecorated(true);
+
         setLayout(null);
 
         titleLabel = new JLabel("Rejestracja");
@@ -47,7 +47,6 @@ public class Registration extends JFrame {
             String username = usernameField.getText();
             String password = new String(passwordField.getPassword());
 
-            // Insert user into users table
             try {
                 String insertQuery = "INSERT INTO users (username, password, portfel) VALUES (?, ?, 0)";
                 PreparedStatement pstmt = c.prepareStatement(insertQuery);

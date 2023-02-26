@@ -60,10 +60,6 @@ public class Database {
             stmt.close();
             stmt.executeUpdate(sqlReservations);
             stmt.close();
-            /*stmt.execute("ALTER TABLE flights ADD COLUMN numberOfFreeSeats INTEGER(2)");
-            stmt.execute("ALTER TABLE flights ADD COLUMN seatPrice DECIMAL(5, 2)");
-            stmt.execute("ALTER TABLE users ADD COLUMN portfel DECIMAL(10, 2)");
-            stmt.close();*/
             c.close();
         } catch ( Exception e ) {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );

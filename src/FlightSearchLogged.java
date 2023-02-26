@@ -17,7 +17,6 @@ public class FlightSearchLogged extends JPanel {
     private DefaultTableModel tableModel;
 
     public FlightSearchLogged(Connection c, String userSes, MainFrameLogged mainFrameLogged){
-        //super("Flight Search");
 
         searchPanel = new JPanel(new GridLayout(5, 2));
         nameLabel = new JLabel("Nazwa linii:");

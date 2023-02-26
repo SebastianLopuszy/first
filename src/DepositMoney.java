@@ -7,10 +7,7 @@ import java.sql.SQLException;
 
 public class DepositMoney extends JFrame {
 
-    private JLabel titleLabel;
-    private JLabel amountLabel;
-    private JLabel yourAmountLabel;
-    private JLabel yourAmountValLabel;
+    private JLabel titleLabel, amountLabel, yourAmountLabel, yourAmountValLabel;
     private JTextField amountField;
     private JButton addButton;
     private JButton cancelButton;
@@ -20,7 +17,6 @@ public class DepositMoney extends JFrame {
 
     public DepositMoney(Connection connection, String userSes) {
         setTitle("Dodaj pieniądze do portfela");
-        //JPanel panel = new JPanel(new GridLayout(6, 2));
         setLayout(null);
 
         this.connection = connection;
