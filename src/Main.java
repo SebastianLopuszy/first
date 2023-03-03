@@ -6,5 +6,6 @@ public class Main extends JFrame {
         Connection c = Database.createDb();
         Database.createTable(c);
         new MainFrame(c);
+        sout"ddkldldld";
     }
 }
